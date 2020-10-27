@@ -13,26 +13,41 @@
   </div>
   <div id="content">
 	
-    <form action="index.html" method="post" target="_blank" autocomplete="on">
-      <label for="fname">First name:</label>
-      <input type="text" id="fname" name="fname"><br><br>
-      <label for="lname">Last Name:</label>
-      <input type="text" id="lname" name="lname"><br><br>
-	  
-      <p>Gender</p>
+    <legend><h1>INPUT YOUR DETAILS</h1></legend>
+    <fieldset>
+      <legend><h3>Name Details</h3></legend>
+      <form action="index.html" method="post" target="_blank" autocomplete="on">
+        <label for="fname"><b>First name</b>:</label>
+        <input type="text" id="fname" name="fname" value=" "><br><br>
+        <label for="lname"><b>Last Name</b>:</label>
+        <input type="text" id="lname" name="lname" value=" "><br><br>
+    </fieldset><br>
+    <fieldset>
+      <legend><h3>Confidentials</h3></legend>
+      <label for="username"><b>Username</b>:</label>
+      <input type="text" name="username" id="username"><br><br>
+      <label for="password"><b>Password</b>:</label>
+      <input type="password" name="password" id="password"><br><br>
+      <label for="confirmpassword"><b>Confirm Password</b>:</label>
+      <input type="password" name="confirmpassword" id="confirmpassword">
+    </fieldset>
+    <fieldset>
+      <legend><h3>Gender</h3></legend>
       <input type="radio" id="male" name="gender" value="male">
       <label for="male">Male</label><br>
       <input type="radio" id="female" name="gender" value="female">
       <label for="male">Female</label><br>
       <input type="radio" id="other" name="gender" value="other">
-      <label for="male">Other</label><br><br>
-	  
+      <label for="male">Other</label><br>
+    </fieldset>
+    <fieldset>
+      <legend><h3>Branch</h3></legend>
       <label for="branch">Select your branch:</label>
-      <select class="branch" name="branch">
+      <select id="branch" name="branch">
         <option value="CV">Civil Engineering</option>
         <option value="ME">Mechanical Engineering</option>
         <option value="EEE">Electronics and Electrical Engineering</option>
-        <option value="ECE">Electronics and Communication Engineering</option>
+        <option value="ECE" selected>Electronics and Communication Engineering</option>
         <option value="IEM">Industrial Engineering and Management</option>
         <option value="CSE">Computer Science and Engineering</option>
         <option value="ETE">Electronics and Telecommunication Engineering</option>
@@ -43,13 +58,13 @@
         <option value="CHEM">Chemical Engineering</option>
         <option value="AERO">Aerospace Engineering</option>
         <option value="AIML">Artificial Intellignece and Machine Learning</option>
-
-
       </select>
-
+      </fieldset>
+      </fieldset>
+      <br>
       <input type="submit" value="Submit">
     </form>
-	</di>
+	</div>
 	</div>
   </body>
 </html>
