@@ -1,0 +1,82 @@
+html {
+  scroll-behavior: smooth;
+  background-image: url("img/circuit.jpg");
+
+}
+body {
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+#title{
+	background-image: linear-gradient(white, #66ccff);
+	border-radius: 10px;
+	margin-left: auto;
+	margin-right:  auto;
+	opacity: 0.9;
+	padding: 12px 28px;
+	color: black;
+	text-shadow: 0 0 3px white;
+	
+}
+#header {
+	color: white;
+	text-shadow: 2px 2px 4px #000000;
+	background-color: #66ccff;
+	text-align: center;
+}
+#buttons{
+	z-index: 1;
+	background-color: white;
+	border-radius: 10px;
+	position: fixed;
+	top: 50%;
+	left: 97%;
+	transform: translate(-50%, 0%);	
+	width: 200px;
+	margin-left: auto;
+	margin-right:  auto;
+	opacity: 0.9;
+}
+.btn{
+	font-size: 20px;
+	padding: 10px 10px;
+	background-image: linear-gradient(white, #66ccff);
+	text-align: left;
+	display: block;
+	border: 1px solid #4689ab;
+	color: black;
+	text-shadow: 2px 2px 4px #000000;
+	text-shadow: 0 0 3px white;
+	
+}
+.btn:hover{
+	font-size: 20px;
+	padding: 12px 28px;
+	background-color: #4689ab;
+	text-align: left;
+	display: block;
+	border: 1px solid #4689ab;
+	color: black;
+	text-shadow: 2px 2px 4px #000000;
+}
+#content{
+	background-image: linear-gradient(grey, #66ccff);
+	border-radius: 10px;
+	margin-left: auto;
+	margin-right:  auto;
+	opacity: 0.95;
+	padding: 12px 28px;
+	color: white;
+	font-size: 25px;
+	text-shadow: 0 0 3px black;
+}
+.column {
+  float: left;
+  width: 10.5%;
+  padding: 5px;
+}
+.column1{
+	float:left;
+	width: 11%;
+	padding: 5px;
+}	
