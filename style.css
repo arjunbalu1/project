@@ -1,7 +1,6 @@
 html {
   scroll-behavior: smooth;
-  background-image: url("img/texture.jpg");
-  background-size: cover;
+  background-image: url("img/texture1.jpg");
 }
 body {
  background-repeat: no-repeat;
