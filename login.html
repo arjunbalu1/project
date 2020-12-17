@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <title>Log In</title>
 	<link href="img/smalllogo.png" rel="icon">
-	<link rel="stylesheet" type="text/css" href="style_signup.css" />
+  <link rel="stylesheet" type="text/css" href="style_signup.css" />
+  <script src="login_script.js"></script>
   </head>
   <body style="text-align:center";>
   <div id="container">
@@ -12,11 +13,11 @@
   <h1>Log In</h1>
   </div>
   <div id="content">
-	<form action="/action_page.php">
+	<form action="home.html" onsubmit="return validateform()" method="post" name="form">
       <label for="username"><b>Username</b>:</label>
-      <input type="text" placeholder="Enter Username" name="uname" required><br><br>
+      <input type="text" placeholder="Enter Username" id="username" required><br><br>
       <label for="password"><b>Password</b>:</label>
-      <input type="password" placeholder="Enter Password" name="psw" required><br><br>
+      <input type="password" placeholder="Enter Password" id="password" required><br><br>
 	  <input type="submit" value="Submit">
 	  </form>
 	</div>
