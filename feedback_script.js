@@ -9,7 +9,7 @@ return true;
 }
 else
 {
-alert("You have entered an invalid email address!");
+alert("Feedback allowed only to bmsce ids!");
 document.form1.email.focus();
 return false;
 }
