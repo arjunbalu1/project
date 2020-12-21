@@ -5,6 +5,7 @@
 <link href="img/smalllogo.png" rel="icon">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="style_signup.css" />
+<script src="feedback_script.js"></script>
 </head>
 <body>
  <div id="container">
@@ -14,13 +15,13 @@
 	 <div id="content">
      <fieldset>
       <legend><h3>Details</h3></legend>
-      <form action="login.html" method="post" autocomplete="on">
+      <form name="form1" action="home.html" onsubmit="return ValidateEmail(document.form1.email)" method="post">
         <label for="fname"><b>First name</b>:</label>
-        <input type="text" id="fname" name="fname" value=" "><br><br>
+        <input type="text" id="fname" placeholder="Enter First Name" name="fname" required><br><br>
         <label for="lname"><b>Last Name</b>:</label>
-        <input type="text" id="lname" name="lname" value=" "><br><br>
-		<label for="email"><b>Email</b>:</label>
-        <input type="email" id="email" name="email" value=" "><br><br>
+        <input type="text" id="lname" placeholder="Enter Last Name" name="lname" required><br><br>
+		    <label for="email"><b>Email</b>:</label>
+        <input type="email" id="email" name="email" placeholder="Enter BMSCE Email" required><br><br>
 		</fieldset>
     <br>
     <div class="row">
@@ -28,7 +29,7 @@
         <label for="feed_back"><p style="text-align:center;"><b>Feedback<b></p></label>
       </div>
       <div class="col-75">
-        <textarea id="subject" name="subject" placeholder="Write something.." rows="4" cols="44"></textarea>
+        <textarea id="subject" name="subject" placeholder="Write something.." rows="4" cols="44" required></textarea>
       </div>
     </div>
     <div class="row">
